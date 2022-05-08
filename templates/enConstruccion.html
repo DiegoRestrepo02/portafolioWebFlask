@@ -1,0 +1,30 @@
+{% extends 'base.html' %}
+
+{% block title %}
+    {{super()}}
+    En Construcción
+{% endblock %}
+
+{% block titlePortafolio %}
+    {% if usuarioIp %}
+        <a class="navbar-brand">{{usuarioIp}}</a>
+    {% else %}
+        <a class="navbar-brand" href="{{url_for('index')}}">Reintentar...</a>
+    {% endif %}
+{% endblock %}
+
+{% block content %}
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-12">
+                <a type="button" class="btn btn-dark" href="{{url_for('index')}}">Volver</a>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12 text-center">
+                <img src="{{url_for('static', filename = 'images/sitioConstruccion.jpg')}}" class="img-fluid rounded"
+                alt="Seccion En Construcción">
+            </div>
+        </div>
+    </div>
+{% endblock %}

@@ -1,0 +1,27 @@
+#navBase .navbar-brand {
+    font-family: fantasy;
+}
+
+#navBase {
+    font-family: cursive;
+}
+
+.dInlinePortafolioNav {
+    display: inline-block;
+}
+
+.dInlinePortafolioNav a {
+    margin: 0%;
+}
+
+.ir-arriba {
+	display: none;
+    padding: 10px 15px;
+	background:#024959;
+	font-size: 20px;
+	color:#fff;
+	cursor: pointer;
+	position: fixed;
+	bottom: 20px;
+	right: 20px;
+}

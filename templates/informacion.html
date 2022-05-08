@@ -1,0 +1,96 @@
+{% extends 'base.html' %}
+
+{% block title %}
+    {{super()}}
+    Información
+{% endblock %}
+
+{% block titlePortafolio %}
+    {% if usuarioIp %}
+        <a class="navbar-brand">{{usuarioIp}}</a>
+    {% else %}
+        <a class="navbar-brand" href="{{url_for('index')}}">Reintentar...</a>
+    {% endif %}
+{% endblock %}
+
+{% block content %}
+    <div class="container marketing">
+        <hr class="featurette-divider">
+
+        <div class="row featurette">
+            <div class="col-md-7">
+                <h2 class="featurette-heading">Desarrollo web en: <span class="text-muted">PHP, ASP.Net, Node, Python, Angular, Vue js, HTML, CSS y JavaScript</span></h2>
+                <p class="lead">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+            </div>
+            <div class="col-md-5">
+                <!-- <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500"
+                    height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500"
+                    preserveAspectRatio="xMidYMid slice" focusable="false">
+                    <title>Placeholder</title>
+                    <rect width="100%" height="100%" fill="#eee"></rect><text x="50%" y="50%" fill="#aaa"
+                        dy=".3em">500x500</text>
+                </svg> -->
+                <img class="img-fluid rounded d-block m-l-none" src="{{url_for('static', filename = 'images/imagenDesarrolloWeb.jpg')}}" style="width: 500px;" alt="Img Desarrollo Web">
+            </div>
+        </div>
+
+        <hr class="featurette-divider">
+
+        <div class="row featurette">
+            <div class="col-md-7 order-md-2">
+                <h2 class="featurette-heading">Desarrollo desktop en: <span class="text-muted">Java, C#, Visual Basic.Net y Python</span>
+                </h2>
+                <p class="lead">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+            </div>
+            <div class="col-md-5 order-md-1">
+                <!-- <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500"
+                    height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500"
+                    preserveAspectRatio="xMidYMid slice" focusable="false">
+                    <title>Placeholder</title>
+                    <rect width="100%" height="100%" fill="#eee"></rect><text x="50%" y="50%" fill="#aaa"
+                        dy=".3em">500x500</text>
+                </svg> -->
+                <img class="img-fluid rounded d-block m-l-none" src="{{url_for('static', filename = 'images/imagenDesarrolloDesktop.jpg')}}" style="width: 500px;" alt="Img Desarrollo Desktop">
+            </div>
+        </div>
+
+        <hr class="featurette-divider">
+
+        <div class="row featurette">
+            <div class="col-md-7">
+                <h2 class="featurette-heading">Base de datos en: <span class="text-muted">SQL Server, MySQL y Microsoft Access</span></h2>
+                <p class="lead">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+            </div>
+            <div class="col-md-5">
+                <!-- <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500"
+                    height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500"
+                    preserveAspectRatio="xMidYMid slice" focusable="false">
+                    <title>Placeholder</title>
+                    <rect width="100%" height="100%" fill="#eee"></rect><text x="50%" y="50%" fill="#aaa"
+                        dy=".3em">500x500</text>
+                </svg> -->
+                <img class="img-fluid rounded d-block m-l-none" src="{{url_for('static', filename = 'images/imagenDesarrolloBaseDeDatos.jpg')}}" style="width: 500px;" alt="Img Base De Datos">
+            </div>
+        </div>
+
+        <hr class="featurette-divider">
+
+        <div class="row featurette">
+            <div class="col-md-7 order-md-2">
+                <h2 class="featurette-heading">Herramientas en: <span class="text-muted">jQuery, Bootstrap, Materialize, Flask, Laravel, Express js, APIs y Web Servic</span>
+                </h2>
+                <p class="lead">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+            </div>
+            <div class="col-md-5 order-md-1">
+                <!-- <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500"
+                    height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500"
+                    preserveAspectRatio="xMidYMid slice" focusable="false">
+                    <title>Placeholder</title>
+                    <rect width="100%" height="100%" fill="#eee"></rect><text x="50%" y="50%" fill="#aaa"
+                        dy=".3em">500x500</text>
+                </svg> -->
+                <img class="img-fluid rounded d-block m-l-none" src="{{url_for('static', filename = 'images/imagenDesarrolloHeramientas.jpg')}}" style="width: 500px;" alt="Img Herramientas">
+            </div>
+        </div>
+    </div>
+{% endblock %}
